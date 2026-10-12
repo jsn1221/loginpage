@@ -1,0 +1,65 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <title>Welcome Page</title>
+        <style>
+            body {
+                background-image: url("assets/kllimt.landscape2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                margin: 0;
+                color: rgb(255, 248, 248);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .welcome-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                background-color: rgba(0, 0, 0, 0.55);
+                border-radius: 5px;
+            }
+
+            .logo {
+                width: auto;
+                height: 25vh;
+                max-height: 180px;
+                object-fit: contain;
+            }
+            
+        </style>
+    </head>
+   
+    <body>
+        <main class="welcome-content">
+            <img class="logo" src="assets/circlelogo3.png" alt="Circle Brush Logo">
+            
+            <h1>Welcome Page</h1>
+
+            <form action="welcomebackpage.html" method="post" target="_blank">
+                <label for="userSelection">New or Returning User? :</label>
+                <br>
+                <select id="userSelection" name="userSelection">
+                    <option value="Select">Select User Type</option>
+                    <option value="new">New User</option>
+                    <option value="returning">Returning User</option>
+                </select>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+
+                <h5>By joining you agree to our terms of service and privacy policy.</h5>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+</html>

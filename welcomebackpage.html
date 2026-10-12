@@ -1,0 +1,58 @@
+<!doctype html> 
+<html lang="en">
+    <style>
+    body {
+        background-image: url("assets/kllimt.landscape2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                margin: 0;
+                color: rgb(255, 248, 248);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    }
+
+    .welcome-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                background-color: rgba(0, 0, 0, 0.55);
+                border-radius: 5px;
+            }
+
+    .logo {
+                width: auto;
+                height: 25vh;
+                max-height: 180px;
+                object-fit: contain;
+            }
+</style>
+
+
+    <head>
+        <title>Welcome Back Page
+        
+        </title>
+    </head>
+    <body>
+        <main class="welcome-content">
+             <img class="logo" src="assets/circlelogo3.png" alt="Circle Brush Logo">
+    
+    
+            <h1>Welcome Back!</h1>
+            <h4 > We sent an access code to your email.</h4> 
+    
+
+            <label for="access code">Access Code</label>
+            <br />
+            <input type="text" id="accessCode" name="accessCode" required>
+            <br /> <br/>
+            <input type="submit" value="Submit">
+            
+        </main>
+    </body>
+</html>

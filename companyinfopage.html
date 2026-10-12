@@ -1,0 +1,49 @@
+<!doctype html> 
+<html lang="en">
+
+<style>
+    body {
+        background-image: url("assets/kllimt.landscape2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        color: white;
+    }
+</style>
+
+    <head>
+        <title>Company Info</title>
+    </head>
+    <body>
+        <img src="assets/white_round_brush_stroke.jpeg" alt="Circle Brush Logo" 
+        style="position: absolute; 
+        top: 0px; 
+        left: 0; 
+        width: auto; 
+        height: 25%; 
+        object-fit: cover;
+        z-index: inherit;" >
+    
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br/><br/><br/><br/><br/>
+
+        <h1>Company Info</h1>
+        <h4 > Add your company information.</h4> 
+
+        <label for="companyName">Company Name</label>
+        <br />
+        <input type="text" id="companyName" name="companyName" required>
+        <br /> <br/>
+       <select id="companyType" name="companyType">
+            <option value="Select">Select Company Type</option>
+            <option value="small">Small Business</option>
+            <option value="large">Large Corporation</option>
+        </select>
+        <br />  <br /> 
+        <select id="industryType" name="industryType">
+            <option value="Select">Select Industry Type</option>
+            <option value="tech">Technology</option>
+            <option value="finance">Finance</option>
+        </select>
+        <br />  <br /> 
+        <input type="submit" value="Submit">
